@@ -14,15 +14,9 @@ class FindApp:
         """
         Searches the File System for an app and returns the full path to the app.
 
-        Parameters
-        ----------
-        app : str
-            The name of the app to search for.
+        :param app: The name of the app to search for.
 
-        Returns
-        -------
-        str
-            The full path to the app.
+        returns: The full path to the app.
         """
 
         # Attempt to find app via PATH environment variable
