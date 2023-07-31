@@ -1,1 +1,1 @@
-from .find_app import find_app
+from .find_app import FindApp

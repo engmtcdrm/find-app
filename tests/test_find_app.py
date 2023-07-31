@@ -1,6 +1,6 @@
 import pytest
 from contextlib import nullcontext as does_not_raise
-from src.find_app.find_app import FindApp
+from find_app import FindApp
 
 @pytest.mark.parametrize('app_nm, expected_val, expected_except', [
     ('', None, pytest.raises(FileNotFoundError)), # test empty string
