@@ -2,3 +2,26 @@
 pythonpath = [
   "src"
 ]
+
+[build-system]
+requires = ['setuptools>=42']
+build-backend = 'setuptools.build_meta'
+
+[project]
+name = "find-app"
+version = "0.0.1"
+authors = [
+  { name="engmtcdrm", email="gabif54409@rolenot.com" },
+]
+description = "FindApp is a class that searches the File System for an app and returns the path to the app."
+readme = "README.md"
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/engmtcdrm/find-app"
+"Bug Tracker" = "https://github.com/engmtcdrm/find-app/issues"
