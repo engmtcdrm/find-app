@@ -15,7 +15,10 @@ class FindApp:
         returns os.PathLike[str].
     """
 
-    def __init__(self, path_type: Optional[Type[Any]] = None):
+    def __init__(
+        self,
+        path_type: Optional[Type[Any]] = None
+    ):
         self.type = path_type
 
         self.locate_apps = [
@@ -24,7 +27,10 @@ class FindApp:
             'locate'
         ]
 
-    def _fix_app_result(self, app_path: Union[str, os.PathLike[str]]) -> Union[str, os.PathLike[str]]:
+    def _fix_app_result(
+        self,
+        app_path: Union[str, os.PathLike[str]]
+    ) -> Union[str, os.PathLike[str]]:
         """
         Fixes the result of the app search.
 
@@ -38,7 +44,10 @@ class FindApp:
 
         return app_path
 
-    def find(self, app: str) -> str:
+    def find(
+        self,
+        app: str
+    ) -> str:
         """
         Searches the File System for an app and returns the path to the app.
 

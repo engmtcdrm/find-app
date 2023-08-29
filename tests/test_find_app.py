@@ -15,5 +15,8 @@ from find_app import FindApp
 ])
 
 def test_find(app_nm, expected_val, expected_except):
+
+    fa = FindApp()
+
     with expected_except:
-        assert FindApp.find(app_nm) == expected_val
+        assert fa.find(app = app_nm) == expected_val
